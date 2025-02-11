@@ -20,7 +20,7 @@ struct ContentView: View {
                 HStack {
                     //身長の入力
                     TextField("", value: $sintyou, format: .number)
-                        .keyboardType(.numberPad)
+                        .keyboardType(.decimalPad)
                         .padding()
                     
                     Picker("", selection: $sintyouUnit) {
@@ -33,7 +33,7 @@ struct ContentView: View {
                 HStack {
 
                     TextField("", value: $taijyu, format: .number)
-                        .keyboardType(.numberPad)
+                        .keyboardType(.decimalPad)
                         .padding()
                     Text("kg")
                 }
